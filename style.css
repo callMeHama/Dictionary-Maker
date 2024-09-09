@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: grey;
+}
+div{
+    padding:5%;
+    background-color: lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:auto;
+    width:50%;
+    margin-top:100px;
+    border: 5px solid darkgray;
+}
+input{
+    width:40%;
+    padding:10px 2.5% 10px 2.5%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+input:focus{
+    border:none
+}
+button{
+    padding:5px;
+    font-size: 25px;
+    display: block;
+    margin: 50px auto 0 auto;
+    outline: none;
+}
+h1{
+    margin:10px;
+}
