@@ -1,6 +1,6 @@
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Tab') {
-        if (document.activeElement === document.querySelectorAll("input")[document.querySelectorAll("input").length-1]){
+        if (document.activeElement === document.querySelectorAll("input")[document.querySelectorAll("input").length-2]){
             let child = document.createElement("input");
             child.type = "text";
             child.className = "1";
@@ -8,14 +8,14 @@ document.addEventListener('keydown', function(event) {
             child2.type = "text";
             child2.className = "2";
 
-            document.querySelector('div').appendChild(child);
-            document.querySelector('div').appendChild(child2);  
+            document.querySelector('#dict').appendChild(child);
+            document.querySelector('#dict').appendChild(child2);  
         }
     }
 });
 
 function dictCreate(){
-    let output = "{";
+    let output = document.getElementById('name').value + " = " + "{";
     inp1 = document.getElementsByClassName('1');
     inp2 = document.getElementsByClassName('2');
 
