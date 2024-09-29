@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Dictionary Maker</title>
 </head>
@@ -12,10 +11,12 @@
         <div id="dict">
         <input class="1" type="text">
         <input class="2" type="text">
+        <img src="icons/plus.png" alt="plus" onclick="addspecific(this)">
         </div>
         <input type="text" placeholder="Add Dictionary Name.." style="margin:10px auto 0 auto;" id="name">
     </div>
     <button onclick="dictCreate()">Create Dictionary</button>
     <h1></h1>
+    <script src="script.js"></script>
 </body>
 </html>
